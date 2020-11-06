@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# pacman & trizen
+alias ts="trizen -S --noconfirm"
+alias tss="trizen -Ss"
+alias tsyu="trizen -Syu"
+alias tr="trizen -Rsncdd"
+alias pmro="pacman -Qtdq | sudo pacman -Rns -"
+
+# vpn
+alias hsvpn="sudo openconnect vpn.hs-albsig.de -u thaithmi"
