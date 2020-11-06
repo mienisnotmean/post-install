@@ -2,7 +2,7 @@
 
 for f in dot-files/* ; do
     file=$(basename $f)
-    if [ ! -f $HOME/.$df ]
+    if [ ! -f $HOME/.$file ]
     then
         ln -s $f ~/.$file
     else
