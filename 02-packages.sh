@@ -19,7 +19,7 @@ func_install() {
 
 package_list=(
     trizen
-    fakeroot
+    base-devel
     firefox
     thunderbird
     keepassxc
