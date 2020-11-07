@@ -1,6 +1,6 @@
 #!/bin/bash
 
-omzpath=/home/mien/.config/oh-my-zsh
+omzpath=$HOME/.config/oh-my-zsh
 
 git clone https://github.com/ohmyzsh/ohmyzsh.git $omzpath
 
@@ -12,7 +12,9 @@ git clone --depth=1 https://github.com/zsh-users/zsh-completions.git $omzpath/cu
 
 git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git $omzpath/custom/plugins/zsh-syntax-highlighting
 
-cp arch_install/dotfiles/.zshrc /home/mien/.zshrc
+git clone https://github.com/dracula/gnome-terminal
+gnome-terminal/install.sh
+rm -rf gnome-terminal
 
 tput setaf 11;
 echo "################################################################"

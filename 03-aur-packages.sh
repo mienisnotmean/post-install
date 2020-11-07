@@ -21,7 +21,6 @@ package_list=(
     vivaldi
     spotify
     teams
-    megasync-git
     ant-dracula-gtk-theme
     jetbrains-toolbox
     nerd-fonts-jetbrains-mono
