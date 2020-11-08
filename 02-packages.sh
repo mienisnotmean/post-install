@@ -19,18 +19,18 @@ func_install() {
 
 func_uninstall() {
     if pacman -Qi $1 &> /dev/null; then
-	tput setaf 2
-  	echo "###############################################################"
-  	echo "# The package " $1 " is already installed"
-      	echo "###############################################################"
-      	echo; tput sgr0
-    else
-    	tput setaf 3
+        tput setaf 3
     	echo "###############################################################"
-    	echo "# Installing package " $1
+    	echo "# Remove package " $1
     	echo "###############################################################"
     	echo; tput sgr0
     	sudo pacman -Rsncdd --noconfirm --needed $1
+    else
+        tput setaf 2
+  	    echo "###############################################################"
+  	    echo "# The package " $1 " is not installed"
+        echo "###############################################################"
+        echo; tput sgr0
     fi
 }
 
