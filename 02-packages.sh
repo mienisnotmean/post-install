@@ -47,6 +47,8 @@ package_list=(
     terraform
     kubernetes
     net-tools
+    awesome-terminal-fonts
+    ttf-font-awesome
 )
 
 remove_package_list=(
