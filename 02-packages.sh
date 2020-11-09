@@ -24,7 +24,7 @@ func_uninstall() {
     	echo "# Remove package " $1
     	echo "###############################################################"
     	echo; tput sgr0
-    	sudo pacman -Rsncdd --noconfirm --needed $1
+    	sudo pacman -Rsncdd $1
     else
         tput setaf 2
   	    echo "###############################################################"
@@ -37,6 +37,7 @@ func_uninstall() {
 package_list=(
     trizen
     base-devel
+    gnome-layout-switcher
     firefox
     thunderbird
     keepassxc
