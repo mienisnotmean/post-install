@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -Syyu --noconfirm
+
 func_install() {
     if pacman -Qi $1 &> /dev/null; then
 	tput setaf 2
@@ -37,16 +39,13 @@ func_uninstall() {
 package_list=(
     trizen
     base-devel
-    gnome-layout-switcher
     firefox
     thunderbird
     keepassxc
     emacs
-    npm
     python-pip
+    rustup
     go
-    terraform
-    kubernetes
     net-tools
     awesome-terminal-fonts
     ttf-font-awesome
