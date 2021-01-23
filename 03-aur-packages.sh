@@ -18,7 +18,6 @@ func_install() {
 }
 
 package_list=(
-    vivaldi
     spotify
     teams
     ant-dracula-gtk-theme
@@ -27,6 +26,8 @@ package_list=(
 )
 
 count=0
+
+curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
 
 for name in "${package_list[@]}" ; do
     count=$[count+1]
